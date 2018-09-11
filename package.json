@@ -1,0 +1,30 @@
+{
+  "name": "mean-backend",
+  "version": "1.0.0",
+  "description": "backend with node and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosCabreraGentile/mean-stack-app.git"
+  },
+  "author": "Carlos Cabrera <carloscgentile@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosCabreraGentile/mean-stack-app/issues"
+  },
+  "homepage": "https://github.com/CarlosCabreraGentile/mean-stack-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.14",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
