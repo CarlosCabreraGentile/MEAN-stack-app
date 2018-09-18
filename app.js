@@ -30,7 +30,7 @@ const port = 3000;
 app.use(cors());
 
 //Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 //Body Parser Middleware, grab the content of a request, a form, etc
 app.use(bodyParser.json());
@@ -46,6 +46,11 @@ app.use('/users', users);
 //Index Route
 app.get('/', (req, res) => {
     res.send('Invalid endpoint');
+});
+
+//Any other router it is gone get send to index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 //Start Server
